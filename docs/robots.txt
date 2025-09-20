@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://MRAvarvokiranshare.github.io/Analyse/sitemap.xml

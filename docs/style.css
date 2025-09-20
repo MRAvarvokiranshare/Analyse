@@ -1,0 +1,16 @@
+:root{
+  --bg:#0b0f13; --card:#121821; --text:#d7e1ec; --accent:#8affc1; --warn:#ffd166; --high:#ff6b6b;
+}
+*{box-sizing:border-box}
+body{margin:0; font-family:Inter, Vazirmatn, sans-serif; background:linear-gradient(135deg,#0b0f13,#0f1722); color:var(--text)}
+header{padding:24px; text-align:center; border-bottom:1px solid #1f2a37}
+h1{margin:0; font-weight:800}
+main{max-width:960px; margin:24px auto; padding:0 16px}
+section{background:var(--card); padding:16px; margin:16px 0; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.25)}
+h2{margin-top:0}
+.badge{display:inline-block; padding:2px 8px; border-radius:8px; margin:0 4px; font-size:12px}
+.ok{background:#14331f; color:#9dffbd}
+.warn{background:#332b14; color:var(--warn)}
+.high{background:#331616; color:var(--high)}
+.item{padding:8px 0; border-bottom:1px solid #1f2a37}
+.item:last-child{border-bottom:none}
