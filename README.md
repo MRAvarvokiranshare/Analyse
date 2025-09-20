@@ -88,6 +88,24 @@ source .venv/bin/activate
 pip install -r requirements.txt
 `
 
+
+
+اگر ارور دا با روش دوم اجرا کنید 
+
+cd ~/Analyse
+source .venv/bin/activate
+
+# ساخت فایل تست با یک Bot Token الکی
+echo "BOT_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'" > test.py
+
+# اجرای اسکن روی کل پروژه + آپدیت داشبورد
+python -m tgsec.cli scan-secrets --path . --dashboard
+
+# ذخیره تغییرات و پوش به گیت‌هاب
+git add .
+git commit -m "تست ابزار TG-SEC با توکن الکی"
+git push origin main
+
 روی Kali Linux
 `bash
 sudo apt update && sudo apt install -y git python3 python3-venv
