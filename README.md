@@ -90,7 +90,8 @@ pip install -r requirements.txt
 
 
 
-اگر ارور دا با روش دوم اجرا کنید 
+اگر ارور داد با روش دوم اجرا کنید 
+
 
 cd ~/Analyse
 source .venv/bin/activate
@@ -105,6 +106,28 @@ python -m tgsec.cli scan-secrets --path . --dashboard
 git add .
 git commit -m "تست ابزار TG-SEC با توکن الکی"
 git push origin main
+
+cd ~/Analyse
+source .venv/bin/activate
+
+# ساخت فایل تست با یک Bot Token الکی
+echo "BOT_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'" > test.py
+
+# اجرای اسکن روی کل پروژه + آپدیت داشبورد
+python -m tgsec.cli scan-secrets --path . --dashboard
+
+
+
+
+
+
+# ساخت فایل تست با یک Bot Token الکی
+echo "BOT_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'" > test.py
+
+# اجرای اسکن روی کل پروژه + آپدیت داشبورد
+python -m tgsec.cli scan-secrets --path . --dashboard
+
+
 
 روی Kali Linux
 `bash
